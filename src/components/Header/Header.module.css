@@ -1,0 +1,31 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--color-header-background);
+}
+
+.header {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 9px;
+  max-width: var(--max-width);
+  width: 100%;
+  background-color: var(--color-header-background);
+  margin: 0 auto;
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.005em;
+}
+
+.logo {
+  display: block;
+  height: 60px;
+}

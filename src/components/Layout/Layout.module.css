@@ -1,0 +1,9 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-content-background);
+}
+
+.contentWrapper {
+  max-width: var(--max-width);
+  margin: 60px auto 0;
+}

@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #333333;
+  --color-accent: rgb(107 149 253);
+  --color-header-background: #f1f7fd;
+  --color-content-background: #ffffff;
+
+  --max-width: 1400px;
+
+  --font-primary: Inter, sans-serif;
+}

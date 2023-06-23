@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { AppRouter } from "./components/Router/AppRouter";
+import { DepartmentsDataProvider } from "./contexts/departmentsData.context";
+import { TableDataProvider } from "./contexts/tableData.context";
+import { ChartDataProvider } from "./contexts/chartData.context";
 
-function App() {
+export const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DepartmentsDataProvider>
+      <TableDataProvider>
+        <ChartDataProvider>
+          <AppRouter />
+        </ChartDataProvider>
+      </TableDataProvider>
+    </DepartmentsDataProvider>
   );
-}
-
-export default App;
+};
