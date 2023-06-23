@@ -1,7 +1,7 @@
 # Departments Data Visualization
 
 Клиентская часть приложения для анализа и визуализации данных департаментов.
-Тестовое задание для Sapiens Solutions.
+Тестовое задание для Sapiens solutions.
 
 ## Руководство по использованию
 
@@ -20,5 +20,5 @@
 ## Технический стек
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Data Grid](https://grid.glideapps.com/) - таблица
-- [Echarts](https://echarts.apache.org/examples/en/editor.html?c=line-simple) - график
+- [Data Grid](https://grid.glideapps.com/) - библиотека для отрисовки таблицы
+- [Echarts](https://echarts.apache.org/examples/en/editor.html?c=line-simple) - библиотека для отрисовки графика
