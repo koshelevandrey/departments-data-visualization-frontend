@@ -4,4 +4,5 @@
 body {
   color: var(--color-primary);
   font-family: var(--font-primary);
+  font-size: var(--size-primary);
 }
