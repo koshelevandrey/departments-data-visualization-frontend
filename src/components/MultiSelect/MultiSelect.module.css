@@ -1,0 +1,9 @@
+.multiselect {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-primary) !important;
+}
+
+.popup {
+  font-family: var(--font-primary) !important;
+}

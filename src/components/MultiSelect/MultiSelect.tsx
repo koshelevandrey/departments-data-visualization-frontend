@@ -1,6 +1,7 @@
 import React from "react";
 import { Select } from "antd";
 import { TableColumn } from "../../types/table";
+import styles from "./MultiSelect.module.css";
 
 interface MultiSelectProps {
   columns: TableColumn[];
@@ -19,7 +20,8 @@ export const MultiSelect: React.FC<MultiSelectProps> = ({
     <Select
       placement="topLeft"
       mode="multiple"
-      style={{ width: "100%", height: "100%" }}
+      className={styles.multiselect}
+      popupClassName={styles.popup}
       placeholder={placeholder}
       defaultValue={columns.filter(
         (column) => column.isChosen && !column.hidden

@@ -1,6 +1,5 @@
 @import "variables.css";
 @import "reset.css";
-@import "ant-design-multiselect.css";
 
 body {
   color: var(--color-primary);
