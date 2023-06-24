@@ -1,5 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTable, faLineChart } from "@fortawesome/free-solid-svg-icons";
 import { HeaderLink } from "./HeaderLink";
 import Logo from "../../images/logo.png";
@@ -11,16 +10,8 @@ export const Header: React.FC = () => {
       <div className={styles.header}>
         <img src={Logo} alt="logo" className={styles.logo} />
         <div className={styles.linksContainer}>
-          <HeaderLink
-            to="/"
-            label="Таблица"
-            icon={<FontAwesomeIcon icon={faTable} color="#6b95fd" />}
-          />
-          <HeaderLink
-            to="/chart"
-            label="График"
-            icon={<FontAwesomeIcon icon={faLineChart} color="#6b95fd" />}
-          />
+          <HeaderLink to="/" label="Таблица" icon={faTable} />
+          <HeaderLink to="/chart" label="График" icon={faLineChart} />
         </div>
       </div>
     </header>

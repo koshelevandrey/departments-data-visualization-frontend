@@ -1,7 +1,8 @@
 :root {
   --color-primary: #333333;
-  --color-accent: rgb(107 149 253);
-  --color-header-background: #f1f7fd;
+  --color-navlink: #ffffff;
+  --color-navlink-active: #91bbf2;
+  --color-header-background: #1f2d5a;
   --color-content-background: #ffffff;
 
   --max-width: 1400px;
