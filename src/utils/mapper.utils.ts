@@ -16,7 +16,7 @@ export function departmentsDataToChartValues(
 }
 
 const GRID_COLUMNS_DEFAULT_WIDTHS: Record<string, number> = {
-  department: 100,
+  department: 130,
   division: 100,
   team: 100,
   month: 100,
