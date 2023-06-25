@@ -11,7 +11,7 @@ export const ChartDataContext = createContext<ChartDataContextType | null>(
   null
 );
 
-const CHART_DEFAULT_OPTIONS = {
+const CHART_DEFAULT_OPTIONS: EChartsOption = {
   legend: {
     data: ["Кол-во отработанных часов"],
   },
