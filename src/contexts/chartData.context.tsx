@@ -11,9 +11,20 @@ export const ChartDataContext = createContext<ChartDataContextType | null>(
   null
 );
 
+const CHART_TYPE = "line";
+const CHART_X_AXIS_NAME = "Кол-во отработанных часов";
+const CHART_TEXT_FONT_FAMILY = "Inter, sans-serif";
+const CHART_TEXT_COLOR = "#333";
 const CHART_DEFAULT_OPTIONS: EChartsOption = {
+  textStyle: {
+    fontFamily: CHART_TEXT_FONT_FAMILY,
+    color: CHART_TEXT_COLOR,
+  },
   legend: {
-    data: ["Кол-во отработанных часов"],
+    data: [CHART_X_AXIS_NAME],
+    textStyle: {
+      fontSize: "16px",
+    },
   },
   tooltip: {
     trigger: "axis",
@@ -25,18 +36,14 @@ const CHART_DEFAULT_OPTIONS: EChartsOption = {
     data: [],
   },
   yAxis: {},
-
   series: [
     {
-      name: "Кол-во отработанных часов",
+      name: CHART_X_AXIS_NAME,
       data: [],
-      type: "line",
+      type: CHART_TYPE,
     },
   ],
 };
-
-const CHART_TYPE = "line";
-const CHART_X_AXIS_NAME = "Кол-во отработанных часов";
 
 interface ChartDataProviderProps {
   children: ReactNode;
